@@ -45,7 +45,7 @@ for (i = 0; i < 100; i++) {
   //
   // Versione con operatore ternario
 
-  function calculateFinalPrice(resto3, resto5) {
+  function stampa(resto3, resto5) {
     return resto3 && resto5
       ? console.log("FizzBuzz")
       : resto3
