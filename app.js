@@ -9,18 +9,29 @@ multipli di 3 che di 5 stampi FizzBuzz. */
 //
 
 // Devo stampare numeri da 1 a 100
-
-let num = i;
+let num;
 
 for (i = 0; i < 100; i++) {
-  console.log(i + 1);
-}
+  num = i + 1;
 
+  const resto3 = num % 3; // [0,1,2]
+  const resto5 = num % 5; // [0,1,2,3,4]
+
+  if (resto3 === 0) {
+    console.log("Fizz");
+  } else if (resto5 === 0) {
+    console.log("Buzz");
+  } else if (resto3 === 0 && resto5 === 0) {
+    console.log("FizzBuzz");
+  } else {
+    console.log(num);
+  }
+}
 // Per sapere se numero è multiplo di n
 // Dato un numero devo sapere quale sia il uso resto se diviso per n
 
-const resto3 = num % 3; // [0,1,2]
-const resto5 = num % 5; // [0,1,2,3,4]
+// const resto3 = num % 3; // [0,1,2]
+// const resto5 = num % 5; // [0,1,2,3,4]
 
 // SE è multiplo di 3
 //      => Dovrò stampare "Fizz"
