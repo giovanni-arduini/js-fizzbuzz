@@ -17,12 +17,12 @@ for (i = 0; i < 100; i++) {
   const resto3 = num % 3; // [0,1,2]
   const resto5 = num % 5; // [0,1,2,3,4]
 
-  if (resto3 === 0) {
-    console.log("Fizz");
+  if (resto3 === 0 && resto5 === 0) {
+    console.log("FizzBuzz");
   } else if (resto5 === 0) {
     console.log("Buzz");
-  } else if (resto3 === 0 && resto5 === 0) {
-    console.log("FizzBuzz");
+  } else if (resto3 === 0) {
+    console.log("Fizz");
   } else {
     console.log(num);
   }
