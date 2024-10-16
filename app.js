@@ -44,14 +44,19 @@ for (i = 0; i < 100; i++) {
 
   //
   // Versione con operatore ternario
+  // Invoco
+  stampa(resto3, resto5, num);
+}
 
-  function stampa(resto3, resto5) {
-    return resto3 && resto5
-      ? console.log("FizzBuzz")
-      : resto3
-      ? console.log("Fizz")
-      : resto5
-      ? console.log("Buzz")
-      : console.log(num);
+// Dichiarazione di funzione
+function stampa(valore1, valore2, valore3) {
+  if (!valore1 && !valore2) {
+    console.log("FizzBuzz");
+  } else if (!valore1) {
+    console.log("Fizz");
+  } else if (!valore2) {
+    console.log("Buzz");
+  } else {
+    console.log(valore3);
   }
 }
